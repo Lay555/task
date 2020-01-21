@@ -39,12 +39,17 @@ public class YingxiaoActivity extends AppCompatActivity {
     }
 
     private void initData() {
-        for (int i=0;i<5;i++){
-            Recycler recycler=new Recycler();
-            lists.add(recycler);
-            Recycler recycler1=new Recycler();
-            lists.add(recycler1);
-        }
+        Recycler recycler=new Recycler("限时满减",true);
+        lists.add(recycler);
+        Recycler recycler1=new Recycler("满减满送",false);
+        lists.add(recycler1);
+        Recycler recycler2=new Recycler("优惠券",false);
+        lists.add(recycler2);
+        Recycler recycler3=new Recycler("折扣特价",false);
+        lists.add(recycler3);
+        Recycler recycler4=new Recycler("组合",false);
+        lists.add(recycler4);
+
     }
 
     private  void initView(){
@@ -53,7 +58,6 @@ public class YingxiaoActivity extends AppCompatActivity {
         LinearLayoutManager manager=new LinearLayoutManager(this);
         manager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(manager);
-        recyclerView.setHasFixedSize(true);
         adapter.setHorizontalDataList(lists);
         recyclerView.setAdapter(adapter);
 

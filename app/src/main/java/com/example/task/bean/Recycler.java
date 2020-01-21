@@ -1,49 +1,27 @@
 package com.example.task.bean;
 
 public class Recycler {
-    private String xianshi;
-    private String manjian;
-    private String youhuiquan;
-    private String zhekou;
-    private String zuhe;
+    private String name;
+    private boolean isSelect;
 
-    public String getXianshi() {
-        return xianshi;
+    public Recycler(String name, boolean isSelect) {
+        this.name = name;
+        this.isSelect = isSelect;
     }
 
-    public void setXianshi(String xianshi) {
-        this.xianshi = xianshi;
+    public String getName() {
+        return name;
     }
 
-    public String getManjian() {
-        return manjian;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setManjian(String manjian) {
-        this.manjian = manjian;
+    public boolean isSelect() {
+        return isSelect;
     }
 
-    public String getYouhuiquan() {
-        return youhuiquan;
-    }
-
-    public void setYouhuiquan(String youhuiquan) {
-        this.youhuiquan = youhuiquan;
-    }
-
-    public String getZhekou() {
-        return zhekou;
-    }
-
-    public void setZhekou(String zhekou) {
-        this.zhekou = zhekou;
-    }
-
-    public String getZuhe() {
-        return zuhe;
-    }
-
-    public void setZuhe(String zuhe) {
-        this.zuhe = zuhe;
+    public void setSelect(boolean select) {
+        isSelect = select;
     }
 }
