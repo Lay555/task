@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/left"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="营销中心"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_yingxiao"
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<!--
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_xianshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="限时抢购"
+            android:textColor="#F33333"
+            android:textSize="15sp" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tv_xianshi"
+            android:layout_alignEnd="@+id/tv_xianshi"
+            android:layout_alignStart="@+id/tv_xianshi"
+            android:background="#F33333"
+            android:minWidth="4dp" />
+
+
+        <TextView
+            android:id="@+id/tv_manjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tv_xianshi"
+            android:text="满减满送"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tv_manjian"
+            android:layout_alignEnd="@+id/tv_manjian"
+            android:layout_alignStart="@+id/tv_manjian"
+            android:background="#F33333"
+            android:minWidth="4dp" />
+
+        <TextView
+            android:id="@+id/tv_youhuiquan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tv_manjian"
+            android:text="优惠券"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        <View
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tv_youhuiquan"
+            android:layout_alignEnd="@+id/tv_youhuiquan"
+            android:layout_alignStart="@+id/tv_youhuiquan"
+            android:background="#F33333"
+            android:minWidth="4dp" />
+
+        <TextView
+            android:id="@+id/tv_zhekou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tv_youhuiquan"
+            android:text="折扣特价"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        <View
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tv_zhekou"
+            android:layout_alignEnd="@+id/tv_zhekou"
+            android:layout_alignStart="@+id/tv_zhekou"
+            android:background="#F33333"
+            />
+
+        <TextView
+            android:id="@+id/tv_zuhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/tv_zhekou"
+            android:text="组合"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        <View
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tv_zuhe"
+            android:layout_alignEnd="@+id/tv_zuhe"
+            android:layout_alignStart="@+id/tv_zuhe"
+            android:background="#F33333"
+            />
+    </RelativeLayout>
+-->
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="秒杀进行中（0）"
+            android:textColor="#F33333"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="即将开始（0）"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="已失效（0）"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_yingxiao"
+        android:background="@color/white"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="添加限时秒杀"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/bg_button"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
